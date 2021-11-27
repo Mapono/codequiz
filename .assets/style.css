@@ -1,0 +1,18 @@
+* {
+    font-family: Arial;
+    font-size 120%;
+}
+
+a {
+    color:purple;
+    text-decoration: none;
+    transition: color 0.1s
+ }
+
+a:hover {
+    color: lightpink;
+}
+
+button {
+    display: inline-block;
+}
