@@ -1,3 +1,41 @@
+var questions = [
+  {
+    title: "Commonly used data types DO NOT include:",
+    choices: ["strings", "booleans", "alerts", "numbers"],
+    answer: "alerts"
+  },
+  {
+    title: "The condition in an if / else statement is enclosed within ____.",
+    choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
+    answer: "parentheses"
+  },
+  {
+    title: "Arrays in JavaScript can be used to store ____.",
+    choices: [
+      "numbers and strings",
+      "other arrays",
+      "booleans",
+      "all of the above"
+    ],
+    answer: "all of the above"
+  },
+  {
+    title:
+      "String values must be enclosed within ____ when being assigned to variables.",
+    choices: ["commas", "curly brackets", "quotes", "parentheses"],
+    answer: "quotes"
+  },
+  {
+    title:
+      "A very useful tool used during development and debugging for printing content to the debugger is:",
+    choices: ["JavaScript", "terminal / bash", "for loops", "console.log"],
+    answer: "console.log"
+  }
+];
+
+
+
+
 // variables to keep track of quiz state
 var qIndex = 0;
 var time = questions.length * 15;
@@ -12,20 +50,16 @@ var startBtn = document.getElementById("start");
 var initEl = document.getElementById("initials");
 var responEl = document.getElementById("response");
 
-// sound effects
-var sfxRight = new Audio("assets/sfx/correct.wav");
-var sfxWrong = new Audio("assets/sfx/incorrect.wav");
-
-function startQuiz() {
+function start() {
   // hide start screen
-  var startScreenEl = document.getElementById("start-screen");
-  startScreenEl.setAttribute("class", "hide");
+  var startScreen = document.getElementById("start-screen");
+  startScreen.setAttribute("class", "hide");
 
   // un-hide questions section
   qEl.removeAttribute("class");
 
   // start timer
-  timerId = setInterval(clockTick, 1000);
+  timerId = setInterval(clockTick, 2000);
 
   // show starting time
   tEl.textContent = time;
@@ -74,13 +108,10 @@ function questionClick() {
     // display new time on page
     tEl.textContent = time;
 
-    // play "wrong" sound effect
-    sfxWrong.play();
+
 
     responEl.textContent = "Wrong!";
   } else {
-    // play "right" sound effect
-    sfxRight.play();
 
     responEl.textContent = "Correct!";
   }
@@ -165,6 +196,6 @@ function checkForEnter(event) {
 subBtn.onclick = saveHighscore;
 
 // user clicks button to start quiz
-startBtn.onclick = startQuiz;
+startBtn.onclick = start;
 
 initEl.onkeyup = checkForEnter;
