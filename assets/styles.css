@@ -72,7 +72,7 @@ li:nth-child(odd){
     left: 10px;
 }
 
-.feedback {
+.response {
     font-style: italic;
     font-size: 120%;
     margin-top: 20px;
