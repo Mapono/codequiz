@@ -1,13 +1,13 @@
 var questions = [
   {
-    title: "Commonly used data types DO NOT include:",
-    choices: ["strings", "booleans", "alerts", "numbers"],
-    answer: "alerts"
+    title: "What does 'HTML'stand for?",
+    choices: ["HyperText Markup Language", "Holtzman-effect Map Logic", "HyperText Manual Language", "Hexidecimal Text Markup Log"],
+    answer: "HyperText Markup Language"
   },
   {
-    title: "The condition in an if / else statement is enclosed within ____.",
-    choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-    answer: "parentheses"
+    title: "What does 'CSS' stand for?",
+    choices: ["Colorized Styling Scripts", "Cascading Style Sheets", "Computational Styling Scripts", "Corrective Styling Sheets"],
+    answer: "Cascading Style Sheets"
   },
   {
     title: "Arrays in JavaScript can be used to store ____.",
@@ -38,7 +38,7 @@ var questions = [
 
 // variables to keep track of quiz state
 var qIndex = 0;
-var time = questions.length * 15;
+var time = questions.length * 25;
 var timerId;
 
 // variables to reference DOM elements
