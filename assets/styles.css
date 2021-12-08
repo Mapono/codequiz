@@ -1,88 +1,77 @@
 * {
-    font-family: Arial;
-    font-size: 120%;
+  font-family: Arial;
+  font-size: 110%;
 }
 
 a {
-    color:purple;
-    text-decoration: none;
-    transition: color 0.1s
- }
+  color: purple;
+  text-decoration: none;
+}
 
 a:hover {
-    color: lightpink;
+  color: lightpink;
 }
 
 button {
-    display: inline-block;
-    margin: 5px;
-    cursor: pointer;
-    font-size: 100%;
-    background-color: purple;
-    border-radius: 5px;
-    padding: 2px 10px;
-    color:white;
-    border:0;
-    transition: background-color 0.1s;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 100%;
+  background-color: purple;
+  border-radius: 5px;
+  padding: 2px 10px;
+  color: white;
+  border: 0;
 }
 
 button:hover {
-    background-color: lightpink;
+  background-color: lightpink;
 }
 
 .choices button {
-    display: block;
+  display: block;
 }
 
 input[type="text"] {
-    font-size:  100%;
+  font-size: 100%;
 }
 
 ol {
-    padding-left: 0px;
-    max-height: 400px;
-    overflow: auto;
+  padding-left: 0px;
+  max-height: 250px;
+  overflow: auto;
 }
 
 li {
-    padding: 5px;
-    list-style: decimal inside none;
-}
-
-li:nth-child(odd){
-    background-color: white;
+  padding: 5px;
 }
 
 .wrapper {
-    margin: 100px auto 0 auto;
-    max-width: 600px;
+  margin: 100px auto 0 auto;
+  max-width: 600px;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .start {
-    text-align: center;
+  text-align: center;
 }
 
 .scores {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+  position: absolute;
 }
 
 .response {
-    font-style: italic;
-    font-size: 120%;
-    margin-top: 20px;
-    padding-top: 10px;
-    color: gray;
-    border-top: 2px solid lightgray;
+  font-style: italic;
+  font-size: 150%;
+  color: gray;
+  text-align: center;
 }
 
-.timer {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.time {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
